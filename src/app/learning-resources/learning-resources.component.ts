@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {SafeLinkDirective} from "../safe-link.directive";
+import {LogDirective} from "../log.directive";
 
 @Component({
   selector: 'app-learning-resources',
@@ -8,6 +9,7 @@ import {SafeLinkDirective} from "../safe-link.directive";
   standalone: true,
   imports: [
     SafeLinkDirective
-  ]
+  ],
+  hostDirectives: [LogDirective]
 })
 export class LearningResourcesComponent {}
